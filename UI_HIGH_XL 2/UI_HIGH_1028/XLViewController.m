@@ -40,15 +40,12 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.hidden= YES;
-    self.title = @"主播";
+    self.titleLabel.text = @"主播";
     
-//    XLTabBarView *tabBarView = [[XLTabBarView alloc] initWithFrame:(CGRectMake(0, ScreenHeight - 54, [UIScreen mainScreen].bounds.size.width, 54))];
-//    [self.view addSubview:tabBarView];
     
     self.tableView = [[UITableView alloc] initWithFrame:(CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64)) style:(UITableViewStylePlain)];
     [self.view addSubview:self.tableView];
-    
-//    [self.view bringSubviewToFront:tabBarView];
+
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -149,7 +146,6 @@
 
     NSInteger tag = button.tag - 1000;
     XLFirstListList *listlist = [[XLFirstListList alloc] init];
-    NSLog(@"%ld",indexPath.row);
     if (indexPath.row == 1) {
         listlist = self.recommendZBArr[tag];
     } else {
@@ -259,22 +255,5 @@
     });
 }
 
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -132,7 +132,6 @@
 - (void)netHandle {
     
     NSString *urlStr = [NSString stringWithFormat:@"http://mobile.ximalaya.com/m/explore_user_list?category_name=%@&condition=%@&device=android&page=%ld&per_page=20",self.category_nameStr,self.conditionStr,self.page];
-    NSLog(@"%@",urlStr);
     [NetHandler getDataWithUrl:urlStr completion:^(NSData *data) {
         NSDictionary *rootDic = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         for (NSDictionary *dic in rootDic[@"list"]) {

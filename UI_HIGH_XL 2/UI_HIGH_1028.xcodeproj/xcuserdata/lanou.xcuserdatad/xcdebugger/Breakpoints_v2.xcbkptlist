@@ -116,11 +116,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UI_HIGH_1028/&#x4e3b;&#x64ad;/&#x4e3b;&#x64ad;&#x66f4;&#x591a;&#x754c;&#x9762;/Controller/XLMoreAnchorViewController.m"
-            timestampString = "468293214.658164"
+            timestampString = "468380782.747319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "284"
-            endingLineNumber = "284"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
             landmarkName = "-footerRereshing"
             landmarkType = "5">
          </BreakpointContent>
@@ -148,11 +148,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UI_HIGH_1028/&#x4e3b;&#x64ad;/&#x4e3b;&#x64ad;&#x66f4;&#x591a;&#x754c;&#x9762;/Controller/XLMoreAnchorViewController.m"
-            timestampString = "468293214.658164"
+            timestampString = "468380782.747319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "261"
-            endingLineNumber = "261"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
             landmarkName = "-headerRereshing"
             landmarkType = "5">
          </BreakpointContent>

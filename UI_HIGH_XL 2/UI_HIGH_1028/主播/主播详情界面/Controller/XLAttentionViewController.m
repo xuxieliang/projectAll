@@ -45,7 +45,6 @@
     
     NSString *urlStr = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/%@?toUid=%ld&pageSize=15&pageId=1&device=android",self.type,self.uid];
     
-    NSLog(@"%@",urlStr);
     [NetHandler getDataWithUrl:urlStr completion:^(NSData *data) {
         NSDictionary *rootDic = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         for (NSDictionary *dic in rootDic[@"list"]) {
